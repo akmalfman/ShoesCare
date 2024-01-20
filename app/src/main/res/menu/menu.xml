@@ -12,9 +12,8 @@
         android:title="Tips"/>
 
     <item
-        android:id="@+id/nav_blank"
         android:title=""
-        android:enabled="true"/>
+        android:enabled="false"/>
 
     <item
         android:id="@+id/nav_history"

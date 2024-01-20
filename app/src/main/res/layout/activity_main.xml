@@ -14,16 +14,20 @@
     <com.google.android.material.bottomappbar.BottomAppBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/nav"
+        android:id="@+id/bottomAppBar"
         android:layout_gravity="bottom"
         android:backgroundTint="@color/white"
-        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabAlignmentMode="center"
         app:fabCradleVerticalOffset="10dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
+            app:labelVisibilityMode="labeled"
+            android:id="@+id/nav_view"
             app:menu="@menu/menu"
             android:layout_gravity="bottom"
             android:background="@drawable/transparent"/>
@@ -31,11 +35,13 @@
     </com.google.android.material.bottomappbar.BottomAppBar>
 
 
-<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:src="@drawable/baseline_whatshot_24"-->
-<!--        app:layout_anchor="@id/nav"-->
-<!--        app:layout_anchorGravity="top|center_horizontal"/>-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_whatshot_24"
+        app:layout_anchor="@+id/bottomAppBar"
+        android:id="@+id/fab"
+        android:clickable="false"
+        android:layout_marginBottom="30dp"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

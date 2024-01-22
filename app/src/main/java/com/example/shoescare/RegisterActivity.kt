@@ -1,5 +1,4 @@
 package com.example.shoescare
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 

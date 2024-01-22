@@ -57,11 +57,12 @@
                 android:src="@drawable/user" />
 
             <EditText
-                android:id="@+id/username"
+                android:id="@+id/email"
                 android:layout_width="250dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="15dp"
-                android:text="@string/username"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
                 android:textColor="@color/gray"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -86,7 +87,8 @@
                 android:layout_width="250dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="15dp"
-                android:text="@string/pass"
+                android:hint="@string/pass"
+                android:inputType="textPassword"
                 android:textColor="@color/gray"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -111,7 +113,8 @@
                 android:layout_width="250dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="15dp"
-                android:text="@string/conf_pass"
+                android:hint="@string/conf_pass"
+                android:inputType="textPassword"
                 android:textColor="@color/gray"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -119,12 +122,12 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_signup"
             android:layout_width="312dp"
             android:layout_height="56dp"
             android:layout_marginTop="18dp"
             android:background="@drawable/botton"
-            android:text="@string/login"
+            android:text="Sign Up"
             android:textColor="@color/dark_blue"
             android:textStyle="bold" />
 
@@ -137,14 +140,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="70dp"
-                android:text="@string/daftar" />
+                android:text="Have account?" />
 
             <TextView
-                android:id="@+id/btn_signup"
+                android:id="@+id/btn_login"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-                android:text="@string/dartar1"
+                android:text="Login"
                 android:textColor="@color/dark_blue"
                 android:textStyle="bold" />
 

@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun replace(fragment : Fragment){
+    private fun replace(fragment: Fragment){
         val fragmentManager=supportFragmentManager
         val fragmentTransaction=fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.navhost,fragment)

@@ -2,7 +2,6 @@
     <string name="app_name">ShoesCare</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
     <string name="judul">Welcome</string>
     <string name="sub_judul">Hello there, login to continue</string>
     <string name="username">Username</string>
@@ -20,4 +19,6 @@
     <string name="progres">Perjalanan</string>
     <string name="detail_progres">Sepatu anda dalam perjalanan menuju ke alamat anda</string>
     <string name="time">00:00 AM</string>
+
+    <string name="email">Email</string>
 </resources>

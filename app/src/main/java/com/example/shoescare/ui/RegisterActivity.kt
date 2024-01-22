@@ -1,4 +1,4 @@
-package com.example.dkag
+package com.example.shoescare.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

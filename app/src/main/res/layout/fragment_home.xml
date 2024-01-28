@@ -150,7 +150,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Servis"
+                android:text="Toko"
 
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -208,16 +208,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:text="Servis"
+        android:text="Toko"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView1" />
 
     <TextView
+        android:id="@+id/tv_allservis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lihat Semua"
+        android:textColor="@color/dark_blue"
         android:textSize="16dp"
         android:layout_marginEnd="24dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
@@ -345,11 +347,13 @@ Kota Bandung, Jawa Barat "
         app:layout_constraintTop_toBottomOf="@+id/cvServis2" />
 
     <TextView
+        android:id="@+id/tv_alltips"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:text="Lihat Semua"
         android:textSize="16dp"
+        android:textColor="@color/dark_blue"
         app:layout_constraintBottom_toBottomOf="@+id/tvTips"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tvTips" />

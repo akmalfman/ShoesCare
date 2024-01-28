@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.example.shoescare.MainActivity;
+import com.example.shoescare.R;
+
 public class SplashscreenActivity extends AppCompatActivity {
 
     @Override
@@ -16,7 +19,7 @@ public class SplashscreenActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashscreenActivity.this,MainActivity2.class));
+                startActivity(new Intent(SplashscreenActivity.this, MainActivity.class));
                 finish();
             }
         }, 3000);

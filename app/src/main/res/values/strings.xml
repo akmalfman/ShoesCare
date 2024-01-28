@@ -15,16 +15,9 @@
     <string name="login1">Already have an account?</string>
     <string name="jdtips">Cuci Sepatu Sneakers:
         Memperpanjang Umur dan Tampilan Sepatu Kesayangan Anda</string>
-    <string name="sumber">Sumber :</string>
-    <string name="detail">Lorem ipsum dolor sit amet, consectetur
-adipisici elit, sed eiusmod tempor incidunt ut
-labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation
-ullamco laboris nisi ut aliquid ex ea commodi
-consequat. Quis aute iure reprehenderit in
-voluptate velit esse cillum dolore eu fugiat
-nulla pariatur. Excepteur sint obcaecat
-cupiditat non proident, sunt in culpa qui officia
-deserunt mollit anim id est laborum. </string>
+    <string name="sumber">Sumber : sibakuljogja</string>
+    <string name="detail">Penting untuk merawat sepatu sneakers Anda secara teratur untuk memastikan agar tetap dalam kondisi terbaik. Cuci sepatu secara rutin tidak hanya memperpanjang umur sepatu, tetapi juga menjaga tampilannya tetap segar dan stylish. Proses cuci sepatu sebaiknya dimulai dengan membersihkan permukaan sepatu dari debu dan kotoran ringan menggunakan sikat lembut. Selanjutnya, gunakan kain lembab dan pembersih sepatu yang sesuai dengan bahan sepatu Anda.\n\n
+
+Setelah membersihkan permukaan, fokuslah pada detail-detail seperti tali sepatu dan sol sepatu. Hindari mencuci sepatu secara keseluruhan di mesin cuci, kecuali jika petunjuk penggunaan sepatu Anda mengizinkan. Sebaiknya, bersihkan dengan tangan untuk menghindari kerusakan pada bagian-bagian tertentu.</string>
     <string name="email">Email</string>
 </resources>

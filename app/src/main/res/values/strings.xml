@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">ShoesCare</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="judul">Welcome</string>
     <string name="sub_judul">Hello there, login to continue</string>
@@ -13,11 +12,12 @@
     <string name="jd_signup">Let’s Get Started</string>
     <string name="sj_signup">Create an account to continue</string>
     <string name="login1">Already have an account?</string>
-    <string name="jdtips">Cuci Sepatu Sneakers:
-        Memperpanjang Umur dan Tampilan Sepatu Kesayangan Anda</string>
-    <string name="sumber">Sumber : sibakuljogja</string>
-    <string name="detail">Penting untuk merawat sepatu sneakers Anda secara teratur untuk memastikan agar tetap dalam kondisi terbaik. Cuci sepatu secara rutin tidak hanya memperpanjang umur sepatu, tetapi juga menjaga tampilannya tetap segar dan stylish. Proses cuci sepatu sebaiknya dimulai dengan membersihkan permukaan sepatu dari debu dan kotoran ringan menggunakan sikat lembut. Selanjutnya, gunakan kain lembab dan pembersih sepatu yang sesuai dengan bahan sepatu Anda.\n\n
 
-Setelah membersihkan permukaan, fokuslah pada detail-detail seperti tali sepatu dan sol sepatu. Hindari mencuci sepatu secara keseluruhan di mesin cuci, kecuali jika petunjuk penggunaan sepatu Anda mengizinkan. Sebaiknya, bersihkan dengan tangan untuk menghindari kerusakan pada bagian-bagian tertentu.</string>
+    <string name="jdtips">Cuci Sepatu Sneakers: Memperpanjang Umur dan Tampilan Sepatu Kesayangan Anda</string>
+    <string name="sumber">Sumber :</string>
+    <string name="detail">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.  </string>
+    <string name="progres">Perjalanan</string>
+    <string name="detail_progres">Sepatu anda dalam perjalanan menuju ke alamat anda</string>
+    <string name="time">00:00 AM</string>
     <string name="email">Email</string>
 </resources>

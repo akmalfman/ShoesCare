@@ -85,5 +85,16 @@ class HomeFragment : Fragment() {
                 .addToBackStack(null)
                 .commit()
         }
+
+        updateUserName()
+    }
+    private fun updateUserName() {
+        mAuth.currentUser?.let { currentUser ->
+            val displayName = currentUser.displayName
+
+            binding.tvName.text = displayName ?: currentUser.email ?: "Pengguna belum login"
+        } ?: run {
+            binding.tvName.text = "Pengguna belum login"
+        }
     }
 }

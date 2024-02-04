@@ -35,6 +35,7 @@ class ProfileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         auth = FirebaseAuth.getInstance()
+        updateUserName()
 
         binding.cvLogout.setOnClickListener {
             showLogoutConfirmationDialog()
@@ -69,6 +70,16 @@ class ProfileFragment : Fragment() {
 
         // Finish the current activity to prevent user from navigating back to it after logout
         requireActivity().finish()
+    }
+
+    private fun updateUserName() {
+        auth.currentUser?.let { currentUser ->
+            val displayName = currentUser.displayName
+
+            binding.tvName.text = displayName ?: currentUser.email ?: "Pengguna belum login"
+        } ?: run {
+            binding.tvName.text = "Pengguna belum login"
+        }
     }
 
 }

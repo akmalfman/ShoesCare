@@ -6,17 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".ui.HistoryFragment">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_title"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/bluee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="24dp"
+            android:text="Hostory"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_history"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029">
-    </androidx.recyclerview.widget.RecyclerView>
-
-
+        app:layout_constraintTop_toBottomOf="@+id/cv_title" />
 </androidx.constraintlayout.widget.ConstraintLayout>

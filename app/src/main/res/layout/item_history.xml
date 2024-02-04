@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:id="@+id/card_view"
     android:layout_gravity="center"
     android:layout_marginStart="8dp"
@@ -21,48 +21,43 @@
         android:layout_centerVertical="true"
         android:layout_toStartOf="@+id/layout_meta">
 
-        <ImageView
-            android:id="@+id/img_history"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:contentDescription="Riwayat Cucian"
-            android:src="@drawable/progres"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
-            android:id="@+id/judul_progres"
+            android:id="@+id/tvName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="8dp"
             android:text="@string/progres"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/img_history"
-            app:layout_constraintTop_toTopOf="@+id/img_history" />
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/deskripsi"
+            android:id="@+id/tvPhone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="fill_vertical"
-            android:layout_marginBottom="8dp"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/judul_progres"
-            app:layout_constraintTop_toBottomOf="@+id/judul_progres"
-            tools:text="Deskripsi Pendek"
-            android:textColor="@color/gray"/>
+            android:textColor="@color/gray"
+            card_view:layout_constraintStart_toStartOf="@+id/tvName"
+            card_view:layout_constraintTop_toBottomOf="@+id/tvName"
+            tools:text="Deskripsi Pendek" />
 
         <TextView
+            android:id="@+id/tvQuantity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/time"
+            android:text="2"
             card_view:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="10dp" />
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300000"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/tvQuantity" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

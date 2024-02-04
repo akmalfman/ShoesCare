@@ -10,7 +10,7 @@
         android:id="@+id/cv_title"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:backgroundTint="@color/blue_light"
+        android:backgroundTint="@color/bluee"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">

@@ -42,17 +42,26 @@ class ServiceFragment : Fragment() {
             val btnMinus = dialog.findViewById<ImageButton>(R.id.btnMinus)
             val btnPlus = dialog.findViewById<ImageButton>(R.id.btnPlus)
             val tvQuantity = dialog.findViewById<TextView>(R.id.tvQuantity)
-//            val btnOrder = dialog.findViewById<Button>(R.id.btnOrder)
+            val btnOrder = dialog.findViewById<Button>(R.id.btnOrder)
 
             var quantity = 1 // Initial quantity
+            val price = 150000 // Initial price
+
+            // Function to update total price based on quantity
+            fun updateTotalPrice() {
+                val totPrice = price * quantity
+                btnOrder.text = "Order ($totPrice)" // Update button text with total price
+            }
 
 // Set initial quantity text
             tvQuantity.text = quantity.toString()
+            updateTotalPrice()
 
 // Set onClickListener for the plus button
             btnPlus.setOnClickListener {
                 quantity++
                 tvQuantity.text = quantity.toString()
+                updateTotalPrice()
             }
 
 // Set onClickListener for the minus button
@@ -61,9 +70,26 @@ class ServiceFragment : Fragment() {
                 if (quantity > 1) {
                     quantity--
                     tvQuantity.text = quantity.toString()
+                    updateTotalPrice()
                 }
             }
 
+//            val totPrice = price * quantity
+
+            // Set onClickListener for the order button
+            btnOrder.setOnClickListener {
+                // Navigate to PaymentFragment with total price
+                val paymentFragment = PaymentFragment()
+                val bundle = Bundle()
+                bundle.putInt("totalPrice", price * quantity)
+                bundle.putInt("totalQuantity", quantity)
+                paymentFragment.arguments = bundle
+                parentFragmentManager.beginTransaction().replace(R.id.navhost, paymentFragment)
+                    .commit()
+
+                // Dismiss the dialog
+                dialog.dismiss()
+            }
 
 
             dialog.show()
